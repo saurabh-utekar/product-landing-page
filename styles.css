@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    text-align: center;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+#header-img{
+    width: 60px;
+    object-fit: contain;
+}
+.product{
+    font-size: 2rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#nav-bar li{
+    margin: 3px;
+}
+#nav-bar li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.email-section{
+    margin-top: 170px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+}
+input{
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#email{
+    width: 225px;
+    border: 1px solid grey;
+}
+#submit{
+    border: none;
+    background-color: black;
+    color: #eee;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: rgb(51, 51, 51);
+}
+section[id="features"]{
+    max-width: 1000px;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+}
+.feature{
+    display: flex;
+}
+.feature .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 20vw;
+}
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 110px;
+    width: 80vw;
+    padding: 0 5px;
+}
+#types{
+    margin: 2rem 0.5rem;
+}
+#video{
+    width: 100%;
+    max-width: 550px;
+    height: 315px;
+}
+#pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+}
+.bat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    height: 270px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+}
+.bat-name{
+    background-color: rgb(158, 156, 156);
+    padding: 7px;
+}
+.price{
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+.bat-description{
+    font-size: 17px;
+    padding: 0 10px 10px 10px;
+    line-height: 1.5;
+}
+.btn{
+    align-self: center;
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: black;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(51, 51, 51);
+}
+@media only screen and (min-width: 720px) {
+    #header{
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    }
+
+    .logo-container{
+        width: 60vw;
+    }
+
+    #nav-bar ul{
+    width: 25vw;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    #nav-bar li{
+        margin: 10px;
+    }
+
+    .email-section{
+        margin-top: 80px;
+    }
+
+}
+
+@media only screen and (min-width:870px) {
+    #pricing{
+        display: flex;
+        flex-direction: row;
+    }
+}
